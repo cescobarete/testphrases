@@ -16,7 +16,9 @@
         function myFunc() {
             var field1 = document.getElementById("input1").value;
             var field2 = document.getElementById("input2").value;
-            if(field1 == field2) {
+            //matches the whole text or letter to see if matches
+            var found = field1.match(field2);
+            if (found) {
                 alert("Inputs match");
             } else {
                 alert("Not a match");
